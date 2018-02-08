@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz</title>
+</head>
+
+<body>
+
+    <form action="https://formspree.io/marcin_piatek111@interia.pl" method="post">
+        <label for="Name">Imię:</label><br>
+        <input type="text" name="Name" id="Name"><br>
+        <label for="Surname">Nazwisko:</label><br>
+        <input type="text" name="Surname" id="Surname"><br>
+        <label for="Email">E-mail:</label><br>
+        <input type="email" name="Email" id="Email"><br>
+        <label for="Phone">Telefon:</label><br>
+        <input type="tel" name="Phone" id="Phone" maxlength="9"><br>
+        <label for="Location">Lokalizacja:</label><br>
+        <select name="Location" id="Location">
+            <option value="Wybierz Miasto" disabled selected>Wybierz Miasto</option>
+            <option value="Kraków">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+        <label for="">Płeć:</label><br>
+        <input type="radio" name="Gender" id="Female" value="Kobieta"><label for="Female">Kobieta</label><br>
+        <input type="radio" name="Gender" id="Male" value="Mężczyzna"><label for="Male">Mężczyzna</label><br>
+        <label for="Message">Wiadomość:</label><br>
+        <textarea name="Message" id="Message" cols="30" rows="10" maxlength="1500" style="overflow: hidden"></textarea><br>
+        <input type="checkbox" name="Consent" id="Consent" required><label for="Consent">Wyrażam zgodę na przetwarzanie moich danych osobowych</label><br>
+        <input type="submit" value="Wyślij">
+    </form>
+
+</body>
+
+</html>
