@@ -10,15 +10,15 @@
 
     <form action="https://formspree.io/marcin_piatek111@interia.pl" method="post">
         <label for="Name">Imię:</label><br>
-        <input type="text" name="Name" id="Name"><br>
+        <input type="text" name="Name" id="Name" required><br>
         <label for="Surname">Nazwisko:</label><br>
-        <input type="text" name="Surname" id="Surname"><br>
+        <input type="text" name="Surname" id="Surname" required><br>
         <label for="Email">E-mail:</label><br>
-        <input type="email" name="Email" id="Email"><br>
+        <input type="email" name="Email" id="Email" required><br>
         <label for="Phone">Telefon:</label><br>
-        <input type="tel" name="Phone" id="Phone" maxlength="9"><br>
+        <input type="tel" name="Phone" id="Phone" maxlength="9" required><br>
         <label for="Location">Lokalizacja:</label><br>
-        <select name="Location" id="Location">
+        <select name="Location" id="Location" required>
             <option value="Wybierz Miasto" disabled selected>Wybierz Miasto</option>
             <option value="Kraków">Kraków</option>
             <option value="Warszawa">Warszawa</option>
@@ -28,7 +28,7 @@
         <input type="radio" name="Gender" id="Female" value="Kobieta" checked><label for="Female">Kobieta</label><br>
         <input type="radio" name="Gender" id="Male" value="Mężczyzna"><label for="Male">Mężczyzna</label><br>
         <label for="Message">Wiadomość:</label><br>
-        <textarea name="Message" id="Message" cols="30" rows="10" maxlength="1500" style="overflow: hidden"></textarea><br>
+        <textarea name="Message" id="Message" cols="30" rows="10" maxlength="1500" style="overflow: hidden" required></textarea><br>
         <input type="checkbox" name="Consent" id="Consent" required><label for="Consent">Wyrażam zgodę na przetwarzanie moich danych osobowych</label><br>
         <input type="submit" value="Wyślij">
     </form>
